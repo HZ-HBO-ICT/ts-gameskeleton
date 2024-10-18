@@ -1,0 +1,21 @@
+{
+  "name": "ts-gameskeleton",
+  "version": "2024.1.0",
+  "repository": "git@github.com:HZ-HBO-ICT/ts-gameskeleton.git",
+  "author": "HZ University of Applied Sciences",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch "
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@stylistic/eslint-plugin": "^2.9.0",
+    "eslint": "^9.13.0",
+    "eslint-plugin-jsdoc": "^50.4.3",
+    "typescript": "^5.6",
+    "typescript-eslint": "^8.12.2"
+  }
+}
