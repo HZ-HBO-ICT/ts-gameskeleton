@@ -137,6 +137,10 @@ export default tseslint.config(
                     MethodDefinition: false,
                 },
             }],
+            "jsdoc/require-description": "warn",
+            "jsdoc/require-param-description": "warn",
+            "jsdoc/require-returns-description": "warn",
+            "jsdoc/require-returns": "warn",
 
             "jsdoc/require-param-type": "off",
             "jsdoc/require-returns-type": "off",
