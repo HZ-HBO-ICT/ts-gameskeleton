@@ -30,10 +30,10 @@ export default class BaseGame extends Game {
   /**
    * Update game state. Called from the GameLoop
    *
-   * @param elapsed time in ms elapsed from the GameLoop
+   * @param delta time in ms elapsed from the GameLoop
    * @returns true if the game should continue
    */
-  public update(elapsed: number): boolean {
+  public update(delta: number): boolean {
     return false;
   }
 

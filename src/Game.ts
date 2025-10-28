@@ -3,7 +3,7 @@
  *
  * The implementation of this class depends on another class: `Game`. This
  * means that, if you use this class, you need to either have a `Game` class
- * that exactly implements the three methods `processInput()`, `update(elapsed)`
+ * that exactly implements the three methods `processInput()`, `update(delta)`
  * and `render()` or change the code in the `step()` method of this class so it
  * represents your own game methods.
  *
@@ -91,9 +91,9 @@ export default abstract class Game {
   /**
    * Update the state of the game
    *
-   * @param elapsed The ms elapsed since the last update
+   * @param delta The ms elapsed since the last update
    */
-  public abstract update(elapsed: number): boolean;
+  public abstract update(delta: number): boolean;
 
   /**
    * Render the game
