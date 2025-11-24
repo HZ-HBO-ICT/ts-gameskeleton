@@ -1,12 +1,14 @@
 /**
  * Helper utlity class for working with the HTML Canvas Element.
  *
- * @version 1.2.0
+ * @version 1.3.0
  * @author Frans Blauw
  */
 
 export default class CanvasRenderer {
   /**
+   * Get the 2D rendering context of a canvas
+   *
    * @param canvas the canvas on which will be drawn
    * @returns the 2D rendering context of the canvas
    */
@@ -46,6 +48,7 @@ export default class CanvasRenderer {
   }
 
   /**
+   * Draw an image on the canvas at the specified coordinates
    *
    * @param canvas that canvas that it should be drawn on
    * @param image the image to be drawn
@@ -73,6 +76,7 @@ export default class CanvasRenderer {
   }
 
   /**
+   * Write text on the canvas at the specified coordinates
    *
    * @param canvas Canvas to write to
    * @param text Text to write

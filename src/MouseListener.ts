@@ -23,6 +23,7 @@ export default class MouseListener {
   private buttonQueried: Record<number, boolean> = {};
 
   /**
+   * Constructor for the MouseListener class
    *
    * @param canvas the canvas element to which the relative coordinates should given
    * @param disableContextMenu true to disable the context (right click) menu. Default: false
@@ -62,6 +63,7 @@ export default class MouseListener {
   }
 
   /**
+   * Checks if the specified mouse button was pressed since the last query.
    *
    * @param buttonCode the mouse button to check
    * @returns `true` when the specified button was pressed
