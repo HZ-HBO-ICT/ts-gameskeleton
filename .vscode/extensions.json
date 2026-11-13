@@ -3,6 +3,6 @@
 	"recommendations": [
 		"dbaeumer.vscode-eslint",
 		"editorconfig.editorconfig",
-		"yandeu.five-server"
+		"ritwickdey.liveserver"
 	]
 }

@@ -21,105 +21,105 @@
 export default class KeyListener {
   // Some convenient key codes already defined here. If you need a specific
   // keycode, see: https://keycode.info/
-  public static readonly KEY_ENTER: string = 'Enter';
+  public static readonly KEY_ENTER: string = "Enter";
 
-  public static readonly KEY_SHIFT_LEFT: string = 'ShiftLeft';
+  public static readonly KEY_SHIFT_LEFT: string = "ShiftLeft";
 
-  public static readonly KEY_SHIFT_RIGHT: string = 'ShiftRight';
+  public static readonly KEY_SHIFT_RIGHT: string = "ShiftRight";
 
-  public static readonly KEY_CTRL_LEFT: string = 'ControlLeft';
+  public static readonly KEY_CTRL_LEFT: string = "ControlLeft";
 
-  public static readonly KEY_CTRL_RIGHT: string = 'ControlRight';
+  public static readonly KEY_CTRL_RIGHT: string = "ControlRight";
 
-  public static readonly KEY_ALT_LEFT: string = 'AltLeft';
+  public static readonly KEY_ALT_LEFT: string = "AltLeft";
 
-  public static readonly KEY_ALT_RIGHT: string = 'AltRight';
+  public static readonly KEY_ALT_RIGHT: string = "AltRight";
 
-  public static readonly KEY_ESC: string = 'Escape';
+  public static readonly KEY_ESC: string = "Escape";
 
-  public static readonly KEY_SPACE: string = 'Space';
+  public static readonly KEY_SPACE: string = "Space";
 
-  public static readonly KEY_LEFT: string = 'ArrowLeft';
+  public static readonly KEY_LEFT: string = "ArrowLeft";
 
-  public static readonly KEY_UP: string = 'ArrowUp';
+  public static readonly KEY_UP: string = "ArrowUp";
 
-  public static readonly KEY_RIGHT: string = 'ArrowRight';
+  public static readonly KEY_RIGHT: string = "ArrowRight";
 
-  public static readonly KEY_DOWN: string = 'ArrowDown';
+  public static readonly KEY_DOWN: string = "ArrowDown";
 
-  public static readonly KEY_DEL: string = 'Delete';
+  public static readonly KEY_DEL: string = "Delete";
 
-  public static readonly KEY_1: string = 'Digit1';
+  public static readonly KEY_1: string = "Digit1";
 
-  public static readonly KEY_2: string = 'Digit2';
+  public static readonly KEY_2: string = "Digit2";
 
-  public static readonly KEY_3: string = 'Digit3';
+  public static readonly KEY_3: string = "Digit3";
 
-  public static readonly KEY_4: string = 'Digit4';
+  public static readonly KEY_4: string = "Digit4";
 
-  public static readonly KEY_5: string = 'Digit5';
+  public static readonly KEY_5: string = "Digit5";
 
-  public static readonly KEY_6: string = 'Digit6';
+  public static readonly KEY_6: string = "Digit6";
 
-  public static readonly KEY_7: string = 'Digit7';
+  public static readonly KEY_7: string = "Digit7";
 
-  public static readonly KEY_8: string = 'Digit8';
+  public static readonly KEY_8: string = "Digit8";
 
-  public static readonly KEY_9: string = 'Digit9';
+  public static readonly KEY_9: string = "Digit9";
 
-  public static readonly KEY_0: string = 'Digit0';
+  public static readonly KEY_0: string = "Digit0";
 
-  public static readonly KEY_A: string = 'KeyA';
+  public static readonly KEY_A: string = "KeyA";
 
-  public static readonly KEY_B: string = 'KeyB';
+  public static readonly KEY_B: string = "KeyB";
 
-  public static readonly KEY_C: string = 'KeyC';
+  public static readonly KEY_C: string = "KeyC";
 
-  public static readonly KEY_D: string = 'KeyD';
+  public static readonly KEY_D: string = "KeyD";
 
-  public static readonly KEY_E: string = 'KeyE';
+  public static readonly KEY_E: string = "KeyE";
 
-  public static readonly KEY_F: string = 'KeyF';
+  public static readonly KEY_F: string = "KeyF";
 
-  public static readonly KEY_G: string = 'KeyG';
+  public static readonly KEY_G: string = "KeyG";
 
-  public static readonly KEY_H: string = 'KeyH';
+  public static readonly KEY_H: string = "KeyH";
 
-  public static readonly KEY_I: string = 'KeyI';
+  public static readonly KEY_I: string = "KeyI";
 
-  public static readonly KEY_J: string = 'KeyJ';
+  public static readonly KEY_J: string = "KeyJ";
 
-  public static readonly KEY_K: string = 'KeyK';
+  public static readonly KEY_K: string = "KeyK";
 
-  public static readonly KEY_L: string = 'KeyL';
+  public static readonly KEY_L: string = "KeyL";
 
-  public static readonly KEY_M: string = 'KeyM';
+  public static readonly KEY_M: string = "KeyM";
 
-  public static readonly KEY_N: string = 'KeyN';
+  public static readonly KEY_N: string = "KeyN";
 
-  public static readonly KEY_O: string = 'KeyO';
+  public static readonly KEY_O: string = "KeyO";
 
-  public static readonly KEY_P: string = 'KeyP';
+  public static readonly KEY_P: string = "KeyP";
 
-  public static readonly KEY_Q: string = 'KeyQ';
+  public static readonly KEY_Q: string = "KeyQ";
 
-  public static readonly KEY_R: string = 'KeyR';
+  public static readonly KEY_R: string = "KeyR";
 
-  public static readonly KEY_S: string = 'KeyS';
+  public static readonly KEY_S: string = "KeyS";
 
-  public static readonly KEY_T: string = 'KeyT';
+  public static readonly KEY_T: string = "KeyT";
 
-  public static readonly KEY_U: string = 'KeyU';
+  public static readonly KEY_U: string = "KeyU";
 
-  public static readonly KEY_V: string = 'KeyV';
+  public static readonly KEY_V: string = "KeyV";
 
-  public static readonly KEY_W: string = 'KeyW';
+  public static readonly KEY_W: string = "KeyW";
 
-  public static readonly KEY_X: string = 'KeyX';
+  public static readonly KEY_X: string = "KeyX";
 
-  public static readonly KEY_Y: string = 'KeyY';
+  public static readonly KEY_Y: string = "KeyY";
 
-  public static readonly KEY_Z: string = 'KeyZ';
+  public static readonly KEY_Z: string = "KeyZ";
 
   /**
    * Record that holds a boolean for each keycode. The keycode is the index of
@@ -135,11 +135,11 @@ export default class KeyListener {
    */
   public constructor() {
     // Register the arrow methods as listeners to keyevents
-    // There is a third event ('keypress'), but we do not need to use it
-    window.addEventListener('keydown', (ev: KeyboardEvent) => {
+    // There is a third event ("keypress"), but we do not need to use it
+    window.addEventListener("keydown", (ev: KeyboardEvent) => {
       this.keyDown[ev.code] = true;
     });
-    window.addEventListener('keyup', (ev: KeyboardEvent) => {
+    window.addEventListener("keyup", (ev: KeyboardEvent) => {
       this.keyDown[ev.code] = false;
       this.keyPressedQueried[ev.code] = false;
     });

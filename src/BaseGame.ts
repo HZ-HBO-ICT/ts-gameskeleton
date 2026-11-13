@@ -1,8 +1,8 @@
-import Game from './Game.js';
+import Game from "./Game.js";
 
-import CanvasRenderer from './CanvasRenderer.js';
-import KeyListener from './KeyListener.js';
-import MouseListener from './MouseListener.js';
+import CanvasRenderer from "./CanvasRenderer.js";
+import KeyListener from "./KeyListener.js";
+import MouseListener from "./MouseListener.js";
 
 export default class BaseGame extends Game {
   private canvas: HTMLCanvasElement;

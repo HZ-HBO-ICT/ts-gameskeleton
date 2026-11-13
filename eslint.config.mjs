@@ -56,7 +56,7 @@ export default tseslint.config(
             "@stylistic/brace-style": "warn",
             "@stylistic/comma-spacing": "warn",
             "@stylistic/indent": ["warn", 2],
-            "@stylistic/quotes": ["warn", "single"],
+            "@stylistic/quotes": ["warn"],
             "@stylistic/lines-between-class-members": "warn",
             "@stylistic/semi": "error",
 

@@ -13,9 +13,9 @@ export default class CanvasRenderer {
    * @returns the 2D rendering context of the canvas
    */
   private static getCanvasContext(canvas: HTMLCanvasElement): CanvasRenderingContext2D {
-    const ctx: CanvasRenderingContext2D | null = canvas.getContext('2d');
+    const ctx: CanvasRenderingContext2D | null = canvas.getContext("2d");
     if (ctx === null) {
-      throw new Error('Canvas Rendering Context is null');
+      throw new Error("Canvas Rendering Context is null");
     }
     return ctx;
   }
@@ -26,7 +26,7 @@ export default class CanvasRenderer {
    * @param canvas canvas that requires filling
    * @param colour the colour that the canvas will be filled with
    */
-  public static fillCanvas(canvas: HTMLCanvasElement, colour: string = '#FF10F0'): void {
+  public static fillCanvas(canvas: HTMLCanvasElement, colour: string = "#FF10F0"): void {
     const ctx: CanvasRenderingContext2D = CanvasRenderer.getCanvasContext(canvas);
     ctx.beginPath();
     ctx.rect(0, 0, canvas.width, canvas.height);
@@ -92,10 +92,10 @@ export default class CanvasRenderer {
     text: string,
     xCoordinate: number,
     yCoordinate: number,
-    alignment: CanvasTextAlign = 'center',
-    fontFamily: string = 'sans-serif',
+    alignment: CanvasTextAlign = "center",
+    fontFamily: string = "sans-serif",
     fontSize: number = 20,
-    color: string = 'red',
+    color: string = "red",
   ): void {
     const ctx: CanvasRenderingContext2D = CanvasRenderer.getCanvasContext(canvas);
     ctx.font = `${fontSize}px ${fontFamily}`;
@@ -118,7 +118,7 @@ export default class CanvasRenderer {
     centerX: number,
     centerY: number,
     radius: number,
-    color: string = 'red',
+    color: string = "red",
   ): void {
     const ctx: CanvasRenderingContext2D = CanvasRenderer.getCanvasContext(canvas);
     ctx.beginPath();
@@ -143,7 +143,7 @@ export default class CanvasRenderer {
     dy: number,
     width: number,
     height: number,
-    color: string = 'red',
+    color: string = "red",
   ): void {
     const ctx: CanvasRenderingContext2D = CanvasRenderer.getCanvasContext(canvas);
     ctx.beginPath();
@@ -166,7 +166,7 @@ export default class CanvasRenderer {
     centerX: number,
     centerY: number,
     radius: number,
-    color: string = 'red',
+    color: string = "red",
   ): void {
     const ctx: CanvasRenderingContext2D = CanvasRenderer.getCanvasContext(canvas);
     ctx.beginPath();
@@ -191,7 +191,7 @@ export default class CanvasRenderer {
     dy: number,
     width: number,
     height: number,
-    color: string = 'red',
+    color: string = "red",
   ): void {
     const ctx: CanvasRenderingContext2D = CanvasRenderer.getCanvasContext(canvas);
     ctx.beginPath();

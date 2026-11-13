@@ -29,21 +29,21 @@ export default class MouseListener {
    * @param disableContextMenu true to disable the context (right click) menu. Default: false
    */
   public constructor(canvas: HTMLCanvasElement, disableContextMenu: boolean = false) {
-    canvas.addEventListener('mousemove', (ev: MouseEvent) => {
+    canvas.addEventListener("mousemove", (ev: MouseEvent) => {
       this.mouseCoordinates = {
         x: ev.offsetX,
         y: ev.offsetY,
       };
     });
-    canvas.addEventListener('mousedown', (ev: MouseEvent) => {
+    canvas.addEventListener("mousedown", (ev: MouseEvent) => {
       this.buttonDown[ev.button] = true;
     });
-    canvas.addEventListener('mouseup', (ev: MouseEvent) => {
+    canvas.addEventListener("mouseup", (ev: MouseEvent) => {
       this.buttonDown[ev.button] = false;
       this.buttonQueried[ev.button] = false;
     });
     if (disableContextMenu) {
-      canvas.addEventListener('contextmenu', (ev: MouseEvent) => {
+      canvas.addEventListener("contextmenu", (ev: MouseEvent) => {
         ev.preventDefault();
       });
     }
