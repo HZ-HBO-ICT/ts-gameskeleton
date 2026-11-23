@@ -119,7 +119,9 @@ export default abstract class Game {
    * Requests to gracefully stop the gameloop.
    */
   public stop(): void {
-    this.state = Game.STATE_STOPPING;
+    if (this.isInState(Game.STATE_STARTING) || this.isInState(Game.STATE_RUNNING)) {
+      this.state = Game.STATE_STOPPING;
+    }
   }
 
   /**
@@ -169,7 +171,7 @@ export default abstract class Game {
     this.render();
 
     // Check if a next animation frame needs to be requested
-    if (!shouldStop || this.isInState(Game.STATE_STOPPING)) {
+    if (!shouldStop && !this.isInState(Game.STATE_STOPPING)) {
       requestAnimationFrame(this.step.bind(this));
     } else {
       this.state = Game.STATE_IDLE;
